@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+</head>
+<body>
+    <main>
+        <section id="inscricao">
+            <h2>Formulário de inscrição no Workshop</h2>
+            <p>Preencha os dados abaixo:</p>
+            <form action="#" method="POST">
+                <fieldset>
+
+                    <legend><b>1 - Informações Pessoais</b></legend>
+
+                    <label for="campo-nome">Nome Completo:</label><br>
+                    <input 
+                    type="text" 
+                    name="nome_completo" 
+                    id="campo-nome" 
+                    placeholder="Informe seu nome completo" required
+                    size="40"><br>
+
+                    <label for="campo-email">Email Pessoal:</label><br>
+                    <input 
+                    type="email" 
+                    name="email_pessoal" 
+                    id="campo-email" 
+                    placeholder="Informe seu E-mail pessoal" required
+                    size="40"></br>
+
+                    <label for="campo-telefone">Telefone:</label><br>
+                    <input  
+                    type="tel"
+                    name="telefone"
+                    id="campo-telefone"
+                    placeholder="Informe seu telefone" required
+                    size="40"><br>
+
+                    <label for="data-nascimento">Data de Nascimento:</label><br>
+                    <input 
+                    type="date" 
+                    name="data_nascimento" 
+                    id="data-nascimento" 
+                    required><br>
+
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><b>2 - Preferências do Workshop</b></legend>
+
+                    <label for="campo-curso">Selecione o whorkshop desejado:</label><br>
+                    <select name="selecao_cursos" id="campo-curso" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="front">Front-end</option>
+                        <option value="back">Back-end</option>
+                        <option value="mobile">Mobile</option>
+                    </select><br>
+
+                    <section id="incricao">
+                        <p><b>Selecione o turno do Workshop:</b></p>
+
+                    <input type="radio" name="turno_escolhido" id="campo-turno-manha" value="manha" checked>
+                    <label for="campo-turno-manha">Turno preferido: Manhã</label>
+
+                    <input type="radio" name="turno_escolhido" id="campo-turno-tarde" value="tarde">
+                    <label for="campo-turno-tarde">Turno preferido: Tarde</label>
+
+                    <input type="radio" name="turno_escolhido" id="campo-turno-noite" value="noite">
+                    <label for="campo-turno-noite">Turno preferido: Noite</label><br>
+
+                    <p><b>Tópicos de Interesse:</b></p>
+
+                    <input type="checkbox" name="topicos[]" id="topico_html" value="html">
+                    <label for="topico_html">HTML</label>   
+
+                    <input type="checkbox" name="topicos[]" id="topico_css" value="css">
+                    <label for="topico_css">CSS</label>
+                    
+                    <input type="checkbox" name="topicos[]" id="topico_js" value="javascript">
+                    <label for="topico_js">JS</label>
+
+                    <br>
+
+                    <label for="campo-observacao">Observações ou Duvidas:</label><br>
+                    <textarea name="observacoes_adicionais" id="campo-observacao" cols="50" rows="4" 
+                    placeholder="Informe aqui suas dados adicionais pertinentes ao evento..."></textarea><br>
+
+                    <br>
+                    <br>
+
+                    <button type="submit"><b>Confirmar meu cadastro</b></button>
+
+                    <button type="reset"><b>Limpar Formulário</b></button>
+                
+            </form>
+    </main>
+    
+</body>
+</html>
